@@ -1,0 +1,27 @@
+<html
+><head>
+    <title>Family</title>
+</head>
+<body>
+    <center>
+    <h1>Family Book</h1>
+    <img id="IMG1" src = "image_dad.png">
+    <h2 id="name1">Muhammad Siddiqui</h2>
+    <button id="button1" onclick="next()">Next</button>
+</center>
+</body>
+<script>
+    var names = ["Aleeza Usman", "Saram Siddiqui", "Aneela Kausar", "Maisam Usman"];
+    var images = ["https://image.freepik.com/free-vector/fight-gesture-expression-little-hijab-girl-cute-cartoon_7084-129.jpg",
+                    "http://clipart-library.com/images/rcjGxoMdi.jpg", 
+                    "http://clipart-library.com/images/AcbjreKc4.jpg",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm-BYPdEl-z8G2EhKVlzNdNuVEdU6FelQfvfRoTy01zFc_J1c&s"];
+
+    function next(){
+  var i = 0;
+  document.getElementById("name1").innerHTML = names[i];
+  document.getElementById("IMG1").src = images[i];
+   i++;
+}
+</script>
+</html>
